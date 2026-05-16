@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티어표</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>TIER LIST</h1>
+    <p>드래그해서 티어에 배치하세요</p>
+  </header>
+
+  <main class="app-layout">
+    <section class="tier-panel">
+      <div class="board" id="board">
+        <div class="tier-row t1" data-tier="1">
+          <div class="tier-label">1</div>
+          <div class="tier-items" data-zone="1"></div>
+        </div>
+        <div class="tier-row t2" data-tier="2">
+          <div class="tier-label">2</div>
+          <div class="tier-items" data-zone="2"></div>
+        </div>
+        <div class="tier-row t3" data-tier="3">
+          <div class="tier-label">3</div>
+          <div class="tier-items" data-zone="3"></div>
+        </div>
+        <div class="tier-row t4" data-tier="4">
+          <div class="tier-label">4</div>
+          <div class="tier-items" data-zone="4"></div>
+        </div>
+        <div class="tier-row t5" data-tier="5">
+          <div class="tier-label">5</div>
+          <div class="tier-items" data-zone="5"></div>
+        </div>
+      </div>
+
+      <div class="pool-section">
+        <div class="pool-header">미배치 항목</div>
+        <div class="pool-items" id="pool" data-zone="pool"></div>
+      </div>
+    </section>
+
+    <aside class="stats-panel" id="statsPanel" aria-label="스탯 설정">
+      <div class="stats-head">
+        <span>STATS</span>
+        <strong id="selectedName">이름 선택</strong>
+      </div>
+      <div class="radar-wrap">
+        <svg id="radarChart" viewBox="0 0 260 260" role="img" aria-label="선택한 멤버 스탯"></svg>
+      </div>
+      <div class="stat-controls" id="statControls"></div>
+      <div class="stat-actions">
+        <button class="stat-save" id="statSave" type="button">설정</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
