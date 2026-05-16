@@ -1,1 +1,0 @@
-# nazun_tierlist_v2
